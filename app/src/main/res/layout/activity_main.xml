@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/boutonGauche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gauche"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toStartOf="@id/BoutonCentre"
+        app:layout_constraintTop_toTopOf="@id/BoutonCentre"
+        android:layout_marginRight="20px"
+        />
+
+    <Button
+        android:id="@+id/boutonDroit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Droite"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toEndOf="@id/BoutonCentre"
+        app:layout_constraintTop_toTopOf="@+id/BoutonCentre"
+        android:layout_marginLeft="20px"
+
+         />
+
+    <Button
+        android:id="@+id/boutonHaut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haut"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toTopOf="@+id/BoutonCentre"
+        app:layout_constraintEnd_toEndOf="@id/BoutonCentre" />
+
+
+    <Button
+        android:id="@+id/boutonBas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bas"
+        app:layout_constraintTop_toBottomOf="@+id/BoutonCentre"
+        app:layout_constraintEnd_toEndOf="@id/BoutonCentre"
+        tools:ignore="MissingConstraints"
+    />
+
+    <Button
+        android:id="@+id/BoutonCentre"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:text="Cent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
